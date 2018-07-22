@@ -1,5 +1,6 @@
 nav {
   position: absolute;
+  z-index: 9999;
 }
 
 nav.fixed {
@@ -15,7 +16,6 @@ nav.inherit {
   background-color: inherit !important;
   box-shadow: none;
   transition: all 0.1s ease-in-out;
-  z-index: 999;
 }
 
 nav.white {
@@ -25,6 +25,11 @@ nav.white {
 nav.white ul a,
 nav.white .brand-logo {
   color: #030303;
+}
+
+.header-logo {
+  font-family: 'Highlander', sans-serif;
+  font-size: 6em;
 }
 
 p {
