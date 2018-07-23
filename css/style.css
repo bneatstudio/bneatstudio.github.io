@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Highlander'; /* Имя шрифта */
+  src: local('Highlander'), /* проверяем наличие шрифта в ОС пользователя */
+  url(../fonts/Highlander.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  font-weight:normal;
+  font-style:normal;
+}
+
 nav {
   position: absolute;
   z-index: 9999;
