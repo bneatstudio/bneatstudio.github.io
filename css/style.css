@@ -40,6 +40,19 @@ nav.white .brand-logo {
   font-size: 6em;
 }
 
+.btn-anchor-link,
+.btn-anchor-link-fill {
+  border-radius: 50vw;
+  text-transform: none !important;
+  margin-top: 40px;
+}
+
+.btn-anchor-link-fill {
+  background-color: transparent !important;
+  border: 1px solid #ffffff;
+  margin-left: 20px;
+}
+
 p {
   line-height: 2rem;
 }
@@ -85,6 +98,71 @@ p {
   font-size: inherit;
 }
 
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #26a69a;
+  border-radius: 50%;
+}
+
 footer.page-footer {
   margin: 0;
 }
+
+.contacts-social-network img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.footer-copyright .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-network img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.service-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*Flex items*/
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-column-container {
+  padding: 0.5em;
+  width: 100%;
+}
+.service-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.service-column h5 {
+  margin-top: 0;
+}
+@media all and (min-width: 40em) {
+  .service-column-container {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .service-column-container {
+    width: 33.33%;
+  }
+}
+
