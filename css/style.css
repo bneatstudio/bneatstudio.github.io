@@ -6,6 +6,34 @@
   font-style:normal;
 }
 
+.main-wrapper {
+  opacity: 0;
+}
+
+.main-preloader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a484b;
+  z-index: 99999;
+}
+
+.btn-preloader {
+  width: 100px !important;
+  height: 100px !important;
+  line-height: 100px;
+  font-size: 24px;
+  font-family: 'Highlander', sans-serif;
+  text-transform: none;
+  cursor: default;
+  box-shadow: none;
+}
+
 nav {
   position: absolute;
   z-index: 9999;
@@ -63,6 +91,11 @@ p {
 
 #index-banner {
   height: 100vh;
+}
+
+#services {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .parallax-container {
@@ -149,7 +182,7 @@ footer.page-footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid rgba(46, 46, 46, 0.3);
   border-radius: 10px;
 }
 .service-column h5 {

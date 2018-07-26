@@ -1,8 +1,17 @@
 (function($){
   $(function(){
-
     $('.sidenav').sidenav();
-    $('.parallax').parallax();
+
+      $(window).on('load', function () {
+          $(this).scrollTop(0);
+          $("body").css("overflow-y", "hidden");
+          $('.main-preloader-wrapper').delay(1500).fadeOut();
+          setTimeout(function () {
+              $('.main-wrapper').css("opacity", "1");
+              $('.parallax').parallax();
+              $("body").css("overflow-y", "auto");
+          }, 1500);
+      });
 
     $(".anchor-link").on("click", "a", function (event) {
         var heightHeader = 60;
