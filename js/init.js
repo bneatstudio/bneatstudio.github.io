@@ -24,8 +24,10 @@
     $(window).scroll(function() {
         if ($(window).scrollTop() >= $(window).height() - 64) {
             $('nav').addClass('white').addClass('fixed').removeClass('inherit');
+            $('a.sidenav-trigger').addClass('black-text');
         } else {
             $('nav').addClass('inherit').removeClass('white').removeClass('fixed');
+            $('a.sidenav-trigger').removeClass('black-text');
         }
     });
 

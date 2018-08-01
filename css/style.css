@@ -63,9 +63,16 @@ nav.white .brand-logo {
   color: #030303;
 }
 
+.sidenav li > a {
+  font-size: 25px !important;
+  height: 80px !important;
+  line-height: 80px !important;
+}
+
 .header-logo {
   font-family: 'Highlander', sans-serif;
   font-size: 6em;
+  margin-top: 35vh;
 }
 
 .btn-anchor-link,
@@ -85,10 +92,6 @@ p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
-
 #index-banner {
   height: 100vh;
 }
@@ -104,23 +107,20 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.parallax-container .section {
+  width: 100%;
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+}
+
+@media only screen and (max-width : 495px) {
+  .header-logo {
+    margin-top: 20vh;
   }
 }
 
@@ -146,7 +146,6 @@ footer.page-footer {
 }
 
 .contacts-social-network img {
-  width: 24px;
   margin-right: 12px;
 }
 
@@ -157,7 +156,6 @@ footer.page-footer {
 }
 
 .footer-social-network img {
-  width: 24px;
   margin-right: 12px;
 }
 
@@ -197,5 +195,16 @@ footer.page-footer {
   .service-column-container {
     width: 33.33%;
   }
+}
+
+.telegram-icon,
+.viber-icon,
+.linkedin-icon,
+.vk-icon {
+  width: 30px;
+}
+
+.instagram-icon {
+  width: 31px;
 }
 
