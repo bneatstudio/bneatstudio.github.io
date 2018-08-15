@@ -16,20 +16,22 @@
     <a class="btn-floating btn-large pulse btn-preloader">Neat</a>
   </div>
 
-  <div class="main-wrapper">
+  <div id="main" class="main-wrapper">
     <nav role="navigation" class="fixed inherit">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Neat Studio</a>
+        <div class="anchor-link">
+          <a id="logo-container" href="#main" class="brand-logo">Neat Studio</a>
+        </div>
         <ul id="menu" class="right hide-on-med-and-down anchor-link">
           <li><a href="#projects">Проекты</a></li>
           <li><a href="#services">Услуги</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#projects">Проекты</a></li>
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+        <ul id="nav-mobile" class="sidenav anchor-link">
+          <li><a href="#projects" class="sidenav-close">Проекты</a></li>
+          <li><a href="#services" class="sidenav-close">Услуги</a></li>
+          <li><a href="#contacts" class="sidenav-close">Контакты</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
@@ -197,11 +199,11 @@
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            <h5 class="header col s12 teal-text text-accent-4">A modern responsive front-end framework based on Material Design</h5>
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="./images/background5.jpg" alt="Unsplashed background img 3"></div>
+      <div class="parallax"><img src="./images/background5.jpg" style="filter: blur(5px) grayscale(2);" alt="Unsplashed background img 3"></div>
     </div>
 
     <div id="contacts" class="container white">

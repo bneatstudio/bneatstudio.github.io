@@ -37,6 +37,8 @@
 nav {
   position: absolute;
   z-index: 9999;
+  height: 64px;
+  line-height: 64px;
 }
 
 nav.fixed {
@@ -46,6 +48,10 @@ nav.fixed {
 nav ul a,
 nav .brand-logo {
   font-family: 'Raleway', sans-serif;
+}
+
+nav ul a:hover {
+  background-color: rgba(255,255,255,.1) !important;
 }
 
 nav.inherit {
@@ -61,6 +67,10 @@ nav.white {
 nav.white ul a,
 nav.white .brand-logo {
   color: #030303;
+}
+
+nav.white ul a:hover {
+  background-color: rgba(0,0,0,.1) !important;
 }
 
 .sidenav li > a {
