@@ -1,9 +1,5 @@
-@font-face {
-  font-family: 'Highlander'; /* Имя шрифта */
-  src: local('Highlander'), /* проверяем наличие шрифта в ОС пользователя */
-  url(../fonts/Highlander.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
-  font-weight:normal;
-  font-style:normal;
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 .main-wrapper {
@@ -39,15 +35,21 @@ nav {
   z-index: 9999;
   height: 64px;
   line-height: 64px;
+  background-color: #151719;
+  transition: all .5s ease-in-out;
+}
+
+nav.not-shadow {
+  box-shadow: none;
+  transition: all .5s ease-in-out;
 }
 
 nav.fixed {
   position: fixed;
 }
 
-nav ul a,
 nav .brand-logo {
-  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
 }
 
 nav ul a:hover {
@@ -79,10 +81,18 @@ nav.white ul a:hover {
   line-height: 80px !important;
 }
 
-.header-logo {
-  font-family: 'Highlander', sans-serif;
-  font-size: 6em;
-  margin-top: 35vh;
+#index-banner {
+  height: 100vh;
+}
+
+#index-banner .anchor-link {
+  margin-top: 41.5vh;
+}
+
+.header-main {
+  margin-bottom: 150px;
+  font-size: 3.25rem;
+  font-weight: 100;
 }
 
 .btn-anchor-link,
@@ -98,21 +108,36 @@ nav.white ul a:hover {
   margin-left: 20px;
 }
 
-p {
-  line-height: 2rem;
-}
-
-#index-banner {
-  height: 100vh;
-}
-
 .parallax {
   background-color: rgba(0,0,0,.3);
+}
+
+.projects-wrapper {
+  background-color: #151618;
+}
+
+.projects-title {
+  font-size: 4.5rem;
+  font-weight: 800;
 }
 
 #services {
   padding-top: 20px;
   padding-bottom: 50px;
+}
+
+.services-wrapper {
+  background-color: #1b1d1f;
+}
+
+.services-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.contacts-title {
+  font-size: 4.5rem;
+  font-weight: 800;
 }
 
 .parallax-container {
@@ -151,7 +176,7 @@ p {
   align-items: center;
   width: 80px;
   height: 80px;
-  background-color: #26a69a;
+  background-color: #4CAF50;
   border-radius: 50%;
 }
 
@@ -161,6 +186,10 @@ footer.page-footer {
 
 .contacts-social-network img {
   margin-right: 12px;
+}
+
+.footer-copyright {
+  background-color: #0a0a0b !important;
 }
 
 .footer-copyright .container {
@@ -194,8 +223,6 @@ footer.page-footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid rgba(46, 46, 46, 0.3);
-  border-radius: 10px;
 }
 .service-column h5 {
   margin-top: 0;
